@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOMENTUM</title>
+    <title>Momentum</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form class ="hidden" id = "login-form">
-        <input 
-            required 
-            maxlength = "15" 
-            type = "text" 
-            placeholder = "what is your name? "
-         />
-        <button>Log In</button>
-    </form>
-    <h2 id = "clock">00:00</h2>
-    <h1 class = "hidden" id = "greeting"></h1>
-    <div id = "quote">
-        <span></span>
-        <span></span>
-    </div>
-
-    <form  id = "todo-form">
-        <input type = "text" placeholder="Write a To do and Press Enter" required/>
-    </form>
-    <ul id = "todo-list">
-    </ul>
-
     <div id = "weather">
         <span></span>
         <span></span>
     </div>
+    <div>
+        <h2 id = "clock">00:00</h2>
+    <form class ="hidden" id = "login-form">
+        <label>Hello! What's your name?<br/></label>
+        <input 
+            required 
+            maxlength = "15" 
+            type = "text" 
+            class = "login-input"
+         />
+        <!-- <button>Log In</button> -->
+    </form>
+    <h1 class = "hidden" id = "greeting"></h1>
     
+    <form  id = "todo-form">
+        <label>What is your main focus for today?<br/></label>
+        <input class = "todo-input" type = "text" required/>
+    </form>
+    <ol id = "todo-list">
+    </ol>
+    
+</div>
+<div id = "quote">
+    <span></span>
+    <span></span>
+</div>
     <script src = "js/greetings.js"></script>
     <script src = "js/todo.js"></script>
     <script src = "js/weather.js"></script>
